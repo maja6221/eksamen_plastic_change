@@ -1,5 +1,135 @@
+<div class="form-container">
+  <img src="./images/plastic_bottle.jpeg" alt="plastic_bottle">
+  <h2>Støt med et valgfrit bidrag</h2>
+  
+  <form>
+    <!-- <div class="bidrag">
+    <label for="navn">Månedligt</label>
+    <input class="input1" type="text" id="navn" name="navn" required>
+    <label for="email">En gang</label>
+    <input class="input2" type="email" id="email" name="email" required>
+  </div> -->
 
-<form>
+  <div class="tekst_beløb">
+    <p>Vælg beløb</p>
+  </div>
+
+  <!-- <div class="beløb">
+    <label for="navn">50</label>
+    <label for="navn">75</label>
+    <label for="navn">125</label>
+  </div> -->
+
+  <div>
+    <input class="andet_beløb" type="text" placeholder="Andet beløb">
+  </div>
+
+  <div>
+    <button class="knap1" type="submit">Støt nu</button>
+  </div>
+
+  </form>
+
+<style>
+
+  .andet_beløb{
+    background-color: #DEDEDE;
+    margin-top: 10px;
+    width: 80%;
+    font-family: "rubik-regular";
+    font-weight: lighter;
+    color: #00283B;
+    font-size: 20px;
+    padding: 10px 18px 10px 18px;
+    text-align: left;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .knap1{
+    padding: 10px 18px 10px 18px;
+    background-color: #FF1054;
+    margin-top: 10px;
+    width: 80%;
+    font-family: "campton-bold";
+    color: white;
+    font-size: 20px;
+  }
+
+  button {
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+  .beløb{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tekst_beløb{
+    font-family: "rubik-regular";
+    font-weight: lighter;
+    font-size: 10px;
+  }
+  .bidrag{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 50px;
+      text-align: center;
+      width: 65%;
+      height: 65%;
+      margin-top: 35px;
+    }
+
+    .form-container img {
+      border-radius: 40px;
+      width: 100%;
+    }
+
+    .form-container p {
+      color: #000000;
+      font-size: 20px;
+      font-family: "rubik-regular";
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: left;
+    }
+
+    .form-container h2{
+      font-family: "campton-bold";
+      font-size: 32px;
+      padding: 0px;
+      text-align: left;
+    }
+
+    input {
+      width: 10%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .input1{
+      border-radius: 100px;
+      background-color: #FF1054;
+      border: none;
+    }
+
+    .input2{
+      border-radius: 100px;
+      background-color: #985568;
+      border: none;
+    }
+</style>
+
+
+<!-- <form>
     <h1 class="h1_login">Log ind</h1>
 
     <label class="email" for="email">E-mail</label>
@@ -192,4 +322,4 @@ form {
   }
   
 }
-</style>
+</style> -->

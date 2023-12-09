@@ -4,7 +4,21 @@ import StotFormular from "./Stot_formular.astro";
 ---
 
 
-<div>
+<div class="hero">
     <Talebobbel/>
     <StotFormular/>
 </div>
+
+<style>
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-image: url(./images/plastic.webp);
+        background-size: cover; /* Gør billedet dække hele baggrunden */
+      /* background-position: center; Centrerer billedet */
+      background-repeat: no-repeat; /* Forhindre gentagelse af billedet */
+      height: 100vh; /* Gør baggrunden så høj som visningen */
+      margin: 0;
+
+    }
+</style>

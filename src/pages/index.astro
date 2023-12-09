@@ -17,6 +17,7 @@ import Footer from "../components/Footer.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="./styles/global.css" />
 		<title>Astro</title>
 	</head>
 	<body>
@@ -32,6 +33,13 @@ import Footer from "../components/Footer.astro";
 		<Nyhedsbrev/>
 		<Footer/>
 
-		<h1>God Jul</h1>
 	</body>
 </html>
+
+<style>
+	body{
+		margin: 0;
+		/* Jeg ved ikke om det er den rigtige gradient jeg har sat ind- i forhold til farverne */
+		background-image: linear-gradient(blue, purple);
+	}
+</style>

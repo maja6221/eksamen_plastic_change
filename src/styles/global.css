@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@font-face {
+  font-family: campton-bold;
+  src: url("campton-bold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: campton-light;
+  src: url("campton-light-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: rubik-regular;
+  src: url("rubik-regular-webfont.woff2") format("woff2");
+}
