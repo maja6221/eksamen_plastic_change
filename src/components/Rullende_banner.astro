@@ -1,0 +1,39 @@
+
+<div class="banner-container">
+    <!-- Rullende bannerindhold -->
+    <div class="banner">
+      <p>STOP PLASTIKFORURENING!</p>
+    </div>
+  </div>
+
+
+<style>
+.banner-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+  }
+
+  .banner {
+    display: inline-block;
+    animation: roll 10s linear infinite;
+  }
+
+  @keyframes roll {
+      0% {
+        transform: translateX(100%); 
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    .banner p {
+      margin: 0;
+      padding: 10px;
+      font-size: 200px;
+      color: #000000;
+      font-family: "campton-bold";
+      padding: 80px 0px 80px 0px;
+    }
+</style>
