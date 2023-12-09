@@ -1,1 +1,33 @@
+---
+import Kasse1 from "./Kasse1.astro";
+import Kasse2 from "./Kasse2.astro";
+import Kasse3 from "./Kasse3.astro";
+import Kasse4 from "./Kasse4.astro";
+---
 
+<div class="grid1">
+  <h2>Derfor ødelægger plastik vores planet</h2>
+  <Kasse1 />
+  <Kasse2 />
+  <Kasse3 />
+  <Kasse4 />
+</div>
+
+<style>
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 20px;
+  }
+
+  h2 {
+    color: white;
+    font-size: 64px;
+    z-index: 1; /* Sørg for, at teksten er over billedet */
+    font-family: "campton-bold";
+    text-align: center;
+    padding-top: rem;
+    margin-top: 0px;
+  }
+</style>
