@@ -1,0 +1,67 @@
+---
+import Flipcard from "./Flipcard.astro";
+import Flipcard2 from "./Flipcard2.astro";
+import Flipcard3 from "./Flipcard3.astro";
+import Flipcard4 from "./Flipcard4.astro";
+import Flipcard5 from "./Flipcard5.astro";
+import Flipcard6 from "./Flipcard6.astro";
+---
+
+<section>
+<div class="container_section3">
+    <h2>6 facts omkring plastik</h2>
+</div>
+
+<div class="grid">
+
+    <Flipcard />
+
+    <Flipcard2 />
+
+    <Flipcard3 />
+
+    <Flipcard4 />
+
+    <Flipcard5 />
+
+    <Flipcard6 />
+
+
+</div>
+
+</section>
+
+
+
+<style>
+
+
+.container_section3{
+        background-image: url(./images/skrald_strand.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 70vh;
+    }
+
+    h2{
+          color: white; 
+          font-size: 64px; 
+          z-index: 1; /* Sørg for, at teksten er over billedet */
+          font-family: "campton-bold";
+          text-align: center;
+          padding-top: 15rem;
+          margin-top: 0px;
+    }
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+        
+       
+        
+    }
+ 
+</style>
