@@ -2,7 +2,11 @@
 <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-back">
-        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+        <div class="inside">
+          <script src="https://lottie.host/embed/a0ce5cc1-b56c-4940-a9fc-87fddc170af5/xteR3sZ7HK.json"></script>
+          <lottie-player src="./lottie1.json" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></lottie-player>
+        <div class="p"><p>Hvis du arrangerede alle de plastikflasker, som verden bruger på et år, fra ende til ende, kunne de nå månen og tilbage ca. 13 gange. Dette tal illustrerer det enorme omfang af plastikflaskeforbrug globalt.</p></div>
+      </div>
       </div>
       <div class="flip-card-front">
         <h1>1.</h1>
@@ -19,6 +23,7 @@
   width: 500px;
   height: 400px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+ 
 }
 
 /* This container is needed to position the front and back side */
@@ -47,7 +52,7 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background: linear-gradient(to bottom, #0E1E90, #5968d978); 
   color: black;
   align-content: center;
   display: grid;
@@ -56,14 +61,26 @@
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #EBEBEB;
+  color: black;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 h1 {
 font-size: 120px;
 color: #FF1054;
 font-family: "campton-bold";
+}
+
+.p {
+  text-align: left;
+  
+}
+
+.inside {
+margin: 20px;
 }
   </style>

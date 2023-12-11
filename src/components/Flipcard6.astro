@@ -2,7 +2,10 @@
 <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-back">
+        <div class="inside">
         <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+       <div class="p"> <p>Den store Stillehavsspand, også kendt som Great Pacific Garbage Patch, indeholder enorme mængder plastikaffald. Nogle skøn anslår, at det dækker et område på størrelse med Texas, hvilket gør det til et af de største koncentrationer af plastikaffald i verden.</p></div>
+      </div>
       </div>
       <div class="flip-card-front">
         <h1>6.</h1>
@@ -10,7 +13,6 @@
       </div>
     </div>
   </div>
-
   <style>
 
     /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -18,8 +20,8 @@
   background-color: transparent;
   width: 500px;
   height: 400px;
-  
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+ 
 }
 
 /* This container is needed to position the front and back side */
@@ -48,7 +50,7 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background: linear-gradient(to bottom, #0E1E90, #5968d978); 
   color: black;
   align-content: center;
   display: grid;
@@ -57,14 +59,26 @@
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #EBEBEB;
+  color: black;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 h1 {
 font-size: 120px;
 color: #FF1054;
 font-family: "campton-bold";
+}
+
+.p {
+  text-align: left;
+  
+}
+
+.inside {
+margin: 20px;
 }
   </style>
