@@ -32,12 +32,13 @@
     grid-template-columns: 1fr 1fr;
     width: 50em;
     border: 0.5px;
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 20px 0px 0px 20px;
     background-color: rgba(0, 0, 0, 0.28);
-    position: relative;
     left: 600px;
-    margin: 10px;
+    margin: 5px;
+    position: relative;
+    left: 640px;
+    top: 2px;
   }
 
   h4 {
@@ -52,10 +53,24 @@
     font-weight: lighter;
     font-size: 16px;
     color: #f4f4f4;
-    margin: 10px;
+    margin: 15px;
   }
 </style>
 
 <script
   src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
   type="module"></script>
+
+<script>
+  import { gsap } from "gsap/dist/gsap";
+  import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".kasse2", {
+    x: 500,
+    duration: 2,
+    scrollTrigger: ".kasse2",
+    start: "start 90%",
+  });
+</script>

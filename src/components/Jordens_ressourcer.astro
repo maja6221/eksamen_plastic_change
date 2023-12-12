@@ -30,8 +30,8 @@
     grid-template-columns: 1fr 1fr;
     width: 50em;
     border: 0.5px;
-    border-radius: 20px;
-    background-color: #ffffff51;
+    border-radius: 0px 20px 20px 0px;
+    background-color: rgba(0, 0, 0, 0.28);
   }
 
   h4 {
@@ -55,3 +55,17 @@
 <script
   src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
   type="module"></script>
+
+<script>
+  import { gsap } from "gsap/dist/gsap";
+  import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".kasse3", {
+    x: -500,
+    duration: 2,
+    scrollTrigger: ".kasse3",
+    start: "start 90%",
+  });
+</script>
