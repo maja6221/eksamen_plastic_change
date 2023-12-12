@@ -1,11 +1,9 @@
 <form id="form-container">
   <img src="./images/plastic_bottle.webp" alt="plastic_bottle">
   <h2>Støt med et valgfrit bidrag</h2>
-  
-  
+
     <div class="bidrag">
       <div class="flex">
-       
        <input type="radio" id="knap0" name="enGang" required>
        <label for="knap0">Månedligt</label>
       </div>
@@ -15,31 +13,30 @@
         <label for="knap0">Én gang</label>
       </div>
     </div>
-
-       <div class="tekst_beløb">
-        <p>Vælg beløb</p>
-       </div>
+    
+       <!-- <div class="tekst_beløb">
+        <p>Vælg beløb:</p>
+       </div> -->
 
     <div class="beløb">
 
-      <input type="radio" id="knap01" name="beløb" value="50" required>
-      <label for="knap01">50</label>
-      <input type="radio" id="knap01" name="beløb" required>
-      <label for="knap01">75</label>
-      <input type="radio" id="knap01" name="beløb" required>
-      <label for="knap01">125</label>
-
+      <div>
+        <label class="beløb" for="knap01">50 kr</label>
+      <input type="radio" id="knap01" name="beløb" value="50">
+    </div>
+    <div>
+      <label class="beløb"  for="knap01">75 kr</label>
+      <input type="radio" id="knap01" name="beløb" >     
+    </div>
+    <div>
+      <label class="beløb" for="knap01">125 kr</label>
+      <input type="radio" id="knap01" name="beløb" >
+    </div>
 
     </div>
 
-    <div>
      <input class="andet_beløb" type="text" placeholder="Andet beløb">
-    </div>
-
-    <div>
-     <button class="knap1" type="submit">Støt nu</button>
-    </div>
-    
+      <input class="knap1" type="submit" value="Støt nu">
 
  </form>
 
@@ -48,7 +45,7 @@
   .andet_beløb{
     background-color: #DEDEDE;
     margin-top: 10px;
-    width: 80%;
+    width: 85%;
     font-family: "rubik-regular";
     font-weight: lighter;
     color: #00283B;
@@ -64,11 +61,19 @@
     padding: 10px 18px 10px 18px;
     background-color: #FF1054;
     margin-top: 10px;
-    width: 80%;
+    width: 85%;
     font-family: "campton-bold";
     color: white;
     font-size: 20px;
     border-radius: 50px;
+    border-color: #FF1054;
+   
+  }
+
+  .knap1:hover {
+    background-color: white;
+    border-color: #FF1054;
+    color: #FF1054;
   }
 
  
@@ -79,13 +84,13 @@
   .beløb{
     display: flex;
     justify-content: space-between;
-    padding-inline: 50px;
+    padding-inline: 30px;
+    font-family: "campton-bold";
+    font-size: 24px;
+    padding-top: 10px;
   }
   
   .tekst_beløb{
-    font-family: "rubik-regular";
-    font-weight: lighter;
-    font-size: 10px;
     padding-left: 30px;
   }
   .bidrag{
@@ -101,7 +106,7 @@
       border-radius: 50px;
       text-align: center;
       width: 65%;
-      height: 75%;
+      height: 70%;
       margin-top: 35px;
     }
 
@@ -114,7 +119,7 @@
     #form-container p {
       color: #000000;
       font-size: 20px;
-      font-family: "rubik-regular";
+      font-family: "campton";
       padding-left: 10px;
       padding-right: 10px;
       text-align: left;
@@ -125,6 +130,8 @@
       font-size: 32px;
       padding: 0px;
       text-align: center;
+      padding-bottom: 10px;
+      padding-top: 10px;
     }
 
     input {
@@ -145,12 +152,18 @@
       
     }
 
+
+    label{
+      font-family: "campton";
+      font-size: 20px;
+    }
   
     .flex {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      gap: 10px;
     }
 
 
