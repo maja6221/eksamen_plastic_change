@@ -37,23 +37,36 @@
   }
 
   @media (max-width: 820px) {
+    h4 {
+      font-size: 20px;
+    }
 
-    h4{
-    font-size: 20px;
-  }
-
-  p{
-    font-size: 20px;
-  }
+    p {
+      font-size: 20px;
+    }
     .kasse4 {
-    width: 200px;
-    border: 0.5px;
-    border-radius: 20px;
-    padding: 20px;
-    background-color: #00000069;
-    position: relative;
-    left: 50px;
-    top: 2px;
+      width: 200px;
+      border: 0.5px;
+      border-radius: 20px;
+      padding: 20px;
+      background-color: #00000069;
+      position: relative;
+      left: 50px;
+      top: 2px;
+    }
   }
-}
 </style>
+
+<script>
+  import { gsap } from "gsap/dist/gsap";
+  import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".kasse4", {
+    x: 500,
+    duration: 2,
+    scrollTrigger: ".kasse4",
+    start: "start 90%",
+  });
+</script>

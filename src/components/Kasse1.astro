@@ -81,3 +81,17 @@
 <script
   src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
   type="module"></script>
+
+<script>
+  import { gsap } from "gsap/dist/gsap";
+  import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".kasse1", {
+    x: -500,
+    duration: 2,
+    scrollTrigger: ".kasse1",
+    start: "start 90%",
+  });
+</script>
