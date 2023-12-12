@@ -1,43 +1,52 @@
-
 <div class="banner-container">
-    <!-- Rullende bannerindhold -->
-    <div class="banner">
-      <p>STOP PLASTIKFORURENING!</p>
-    </div>
+  <!-- Rullende bannerindhold -->
+  <div class="banner">
+    <p>STOP PLASTIKFORURENING!</p>
   </div>
-
+</div>
 
 <style>
-.banner-container {
+  .banner-container {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
     position: relative;
     display: inline-block;
     padding: 80px 0px 80px 0px;
-    background-color: #0029FF;
-    gap: 10px;
+    background: rgb(7, 11, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(7, 11, 36, 1) 0%,
+      rgba(54, 83, 169, 1) 30%,
+      rgba(54, 83, 169, 1) 50%,
+      rgba(54, 83, 169, 1) 70%,
+      rgba(7, 11, 36, 1) 100%
+    );
   }
 
   .banner {
     display: inline-block;
-    animation: roll 10s linear infinite;
+    animation: roll 8s linear infinite;
   }
 
+  p {
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #ff1054;
+  }
   @keyframes roll {
-      0% {
-        transform: translateX(100%); 
-      }
-      100% {
-        transform: translateX(-100%);
-      }
+    0% {
+      transform: translateX(100%);
     }
-    .banner p {
-      margin: 0;
-      padding: 10px;
-      font-size: 200px;
-      color: #000000;
-      font-family: "campton-bold";
-      padding: 80px 0px 80px 0px;
+    100% {
+      transform: translateX(-100%);
     }
+  }
+  .banner p {
+    margin: 0;
+    padding: 10px;
+    font-size: 200px;
+    color: #000000;
+    font-family: "campton-bold";
+    padding: 80px 0px 80px 0px;
+  }
 </style>
