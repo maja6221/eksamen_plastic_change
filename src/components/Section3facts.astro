@@ -36,6 +36,30 @@ import Flipcard6 from "./Flipcard6.astro";
 <style>
 
 
+    @media (min-width: 400px) {
+h2{
+      font-size: 64px; 
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr; 
+}
+}
+
+
+@media (min-width: 600px) {
+h2{
+      font-size: 64px; 
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr; 
+}
+}
+  
+
 .container_section3{
         background-image: url(./images/skrald_strand.webp);
         background-size: cover;
@@ -63,5 +87,5 @@ import Flipcard6 from "./Flipcard6.astro";
        
         
     }
- 
+
 </style>
