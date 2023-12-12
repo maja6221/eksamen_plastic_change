@@ -1,7 +1,7 @@
 ---
 import Header from "../components/Header.astro";
-import Hero2 from "../components/Hero2.astro";
 import Footer from "../components/Footer.astro";
+import StotFormular from "../components/Stot_formular.astro";
 ---
 
 <html lang="en">
@@ -15,7 +15,9 @@ import Footer from "../components/Footer.astro";
   </head>
   <body>
     <Header />
-    <Hero2 />
+    <h2>Støt os i kampen mod plastik forurening</h2>
+    <h4>Doner et valgfrit bidrag og gør en forskel. Alle beløb, små som store, kan gøre en kæmpe forskel!</h4>
+    <StotFormular />
     <Footer />
   </body>
 </html>
@@ -32,5 +34,34 @@ import Footer from "../components/Footer.astro";
       #304ca8,
       #3740a4
     );
+  }
+
+  h2{
+    font-size: 64px;
+    font-family: "campton-bold";
+    color: #FFFFFF;
+    gap: 10px;
+    padding: 50px 10px 50px 10px;
+    text-align: center;
+    margin: 0;
+  }
+
+  h4{
+    font-family: "campton-bold";
+    font-size: 30px;
+    color: #FFFFFF;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    margin: 0;
+  }
+
+  @media (max-width: 820px) {
+    h2 {
+      font-size: 35px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
   }
 </style>
