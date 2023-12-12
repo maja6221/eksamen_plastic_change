@@ -1,0 +1,36 @@
+---
+import NaturenHavet from "./Naturen_havet.astro";
+import Klimaaftryk from "./Klimaaftryk.astro";
+import Jordensressourcer from "./Jordens_ressourcer.astro";
+import Skadeligkemi from "./Skadelig_kemi.astro";
+import Buttonstot from "./Button_stot.astro";
+---
+
+<div>
+  <h2>Din støtte går blandt andet til at:</h2>
+  <div class="grid">
+    <NaturenHavet />
+    <Klimaaftryk />
+    <Jordensressourcer />
+    <Skadeligkemi />
+    <Buttonstot />
+  </div>
+</div>
+
+<style>
+  /* .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  } */
+
+  h2 {
+    color: white;
+    font-size: 64px;
+    z-index: 1; /* Sørg for, at teksten er over billedet */
+    font-family: "campton-bold";
+    text-align: center;
+    padding-top: 5rem;
+    margin-top: 0px;
+  }
+</style>
