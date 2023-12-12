@@ -1,16 +1,14 @@
-
-
-<div class="container">
-<img src="./images/boks_landingpage.png" alt="boks_til_landingpage">
-<div class="text1">STOP</div>
-<div class="text2">PLASTIK</div>
-<div class="text3">FORURENING</div>
-<div class="text4">NU!</div>
+<div class="container_hero">
+  <img class="img_hero1"src="./images/boks_landingpage.png" alt="boks_til_landingpage">
+  <div class="text1">STOP</div>
+  <div class="text2">PLASTIK</div>
+  <div class="text3">FORURENING</div>
+  <div class="text4">NU!</div>
 </div>
 
 
 <style>
-    .container{
+    .container_hero{
         margin-left: 10rem;
         /* position: relative;
         text-align: center; */
@@ -22,9 +20,9 @@
     } */
 
     .text1{
-    position: absolute;
+      position: absolute;
       top: 18%; 
-      left: 19.5%;
+      left: 19%;
       color: white; 
       font-size: 128px; 
       z-index: 1; /* Sørg for, at teksten er over billedet */
@@ -32,9 +30,9 @@
     }
 
     .text2{
-    position: absolute;
+      position: absolute;
       top: 32%; 
-      left: 19.7%;
+      left: 19.5%;
       color: white; 
       font-size: 78px; 
       z-index: 1; /* Sørg for, at teksten er over billedet */
@@ -42,7 +40,7 @@
     }
 
     .text3{
-    position: absolute;
+      position: absolute;
       top: 42%; 
       left: 19.7%; 
       color: white; 
@@ -60,4 +58,50 @@
       z-index: 1; /* Sørg for, at teksten er over billedet */
       font-family: "campton-bold";
     }
+
+    @media (max-width: 820px) {
+        .hero1{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .img_hero1{
+          width: 100%;
+          height: 100%;
+          margin-left: 0px;
+        }
+
+        .container_hero{
+          margin-left: 0px;
+          margin-right: 11px;
+          margin-top: 0;
+        }
+
+        .text1{
+          font-size: 86px;
+          top: 20%;
+          left: 19.5%;
+        }
+
+        .text2{
+          font-size: 50px;
+          top: 30%;
+          left: 21%;
+        }
+
+        .text3{
+          font-size: 30px;
+          top: 36.5%;
+          left: 21%;
+        }
+
+        .text4{
+          font-size: 140px;
+          top: 39%;
+          left: 19%;
+        }
+
+
+        }
+
 </style>
