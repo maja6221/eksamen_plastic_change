@@ -3,7 +3,16 @@
     <div class="flip-card-inner">
       <div class="flip-card-back">
         <div class="inside">
-        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+          <div class="lottie">
+            <dotlottie-player
+            src="https://lottie.host/82f8b59d-3764-440a-9097-eec74a76903e/M9hEjBscje.json"
+            background="transparent"
+            speed="1"
+            style="width: 400px; height: 300px;"
+            position:relative;
+            loop
+            autoplay></dotlottie-player>
+          </div>
        <div class="p"><p>Selv verdens højeste bjerg, Mount Everest, er ikke fri for plastikforurening. Der er rapporter om, at selv på toppen af Everest kan man finde spor af plastikaffald, der er blevet efterladt af bjergbestigere.</p></div> 
       </div>
       </div>
@@ -77,8 +86,14 @@ font-family: "campton-bold";
   text-align: left;
   
 }
-
 .inside {
 margin: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
+
   </style>
+
+
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
