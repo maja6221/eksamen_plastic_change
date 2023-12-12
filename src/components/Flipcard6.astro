@@ -3,7 +3,16 @@
     <div class="flip-card-inner">
       <div class="flip-card-back">
         <div class="inside">
-        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+          <div class="lottie">
+            <dotlottie-player
+            src="https://lottie.host/1960d1f3-e300-4741-a672-07b8424e78d3/itQOp9nPYI.json"
+            background="transparent"
+            speed="1"
+            style="width: 400px; height: 300px;"
+            position:relative;
+            loop
+            autoplay></dotlottie-player>
+          </div>
        <div class="p"> <p>Den store Stillehavsspand, også kendt som Great Pacific Garbage Patch, indeholder enorme mængder plastikaffald. Nogle skøn anslår, at det dækker et område på størrelse med Texas, hvilket gør det til et af de største koncentrationer af plastikaffald i verden.</p></div>
       </div>
       </div>
@@ -80,5 +89,14 @@ font-family: "campton-bold";
 
 .inside {
 margin: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
+
   </style>
+
+
+
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
