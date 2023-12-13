@@ -20,6 +20,7 @@ import Footer from "../components/Footer.astro";
     <title>Astro</title>
   </head>
   <body>
+    <div class="overflow">
     <Header />
     <Section1Hero />
     <Section2 />
@@ -27,13 +28,21 @@ import Footer from "../components/Footer.astro";
     <Section4 />
     <RullendeBanner />
     <Instagram />
+    <div class="formular2">
     <Formular2 />
+  </div>
     <Nyhedsbrev />
     <Footer />
+
+  </div>
   </body>
 </html>
 
 <style>
+
+  .overflow {
+    overflow: hidden;
+  }
   body {
     margin: 0;
     /* Jeg ved ikke om det er den rigtige gradient jeg har sat ind- i forhold til farverne */
@@ -44,5 +53,11 @@ import Footer from "../components/Footer.astro";
       #304ca8,
       #3740a4
     );
+
+  }
+
+  .formular2 {
+    display: flex;
+    justify-content: center;
   }
 </style>
