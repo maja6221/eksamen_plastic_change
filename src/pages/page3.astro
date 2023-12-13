@@ -1,7 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import StotFormular from "../components/Stot_formular.astro";
+import StoetFormular2 from "../components/Stoet_formular2.astro";
 ---
 
 <html lang="en">
@@ -14,9 +14,9 @@ import StotFormular from "../components/Stot_formular.astro";
   </head>
   <body>
     <Header />
-    <h2>Støt os i kampen mod plastik forurening</h2>
-    <h4>Doner et valgfrit bidrag og gør en forskel. Alle beløb, små som store, kan gøre en kæmpe forskel!</h4>
-    <StotFormular />
+    <h2>Støt os imod plastik forurening</h2>
+    <h4>Alle beløb, små som store, kan gøre en stor forskel!</h4>
+    <StoetFormular2 />
     <Footer />
   </body>
 </html>
@@ -40,7 +40,7 @@ import StotFormular from "../components/Stot_formular.astro";
     font-family: "campton-bold";
     color: #FFFFFF;
     gap: 10px;
-    padding: 50px 10px 50px 10px;
+    padding: 60px 10px 40px 10px;
     text-align: center;
     margin: 0;
   }
@@ -50,17 +50,22 @@ import StotFormular from "../components/Stot_formular.astro";
     font-size: 30px;
     color: #FFFFFF;
     padding: 10px 10px 10px 10px;
-    text-align: center;
     margin: 0;
+    margin-left: 22%;
+    margin-right: 25%;
   }
 
   @media (max-width: 820px) {
     h2 {
       font-size: 35px;
+      padding: 20px 0px 10px 0px;
     }
 
     h4{
         font-size: 20px;
+        margin-left: 10%;
+        margin-right: 0%;
+        padding-bottom: 30px;
     }
   }
 </style>
