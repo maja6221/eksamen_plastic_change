@@ -1,40 +1,68 @@
 <div class="nyhedsbrev">
-<h2>Tilmeld dig vores nyhedsbrev</h2>
-<h3>Følg med i arbejdet om plastik forurening</h3>
-
-<!-- <div class="container">
-    <p>Skriv din e-mail</p>
-    <button class="inner-button">Klik her</button>
-</div> -->
-
-<!-- <div class="container">
-    <input class="email" type="text" placeholder="Skriv din email ">
-    <button class="inner-button">Klik her</button>
-</div> -->
+  <h2>Tilmeld dig vores nyhedsbrev</h2>
+  <h3>Følg med i arbejdet om plastik forurening</h3>
+  <div class="brev">
+    <input class="email" type="text" placeholder="Skriv din email" />
+    <input class="knap1" type="submit" value="Tilmeld" />
+  </div>
+</div>
 
 <style>
-    h2 {
-        font-family: "campton-bold";
-        font-size: 64px;
-        color: #FFFFFF;
-        gap: 10px;
-        padding: 10px 0px 10px 0px;
-        text-align: center;
-        margin: 0;
-    }
+  .nyhedsbrev {
+    padding: 30px 0px 40px 0px;
+  }
+  .brev {
+    text-align: center;
+  }
+  .email {
+    background-color: #dedede;
+    margin-top: 10px;
+    width: 30%;
+    font-family: "rubik-regular";
+    font-weight: lighter;
+    color: #00283b;
+    font-size: 20px;
+    padding: 10px 18px 10px 18px;
+    text-align: left;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
 
-    h3{
-        font-family: "campton-light";
-        font-size: 35px;
-        color: #FFFFFF;
-        gap: 10px;
-        padding: 12px 0px 12px 0px;
-        font-weight: lighter;
-        text-align: center;
-        margin: 0;
-    }
+  .knap1 {
+    padding: 10px 18px 10px 18px;
+    background-color: #ff1054;
+    margin-top: 10px;
+    width: 10%;
+    font-family: "campton-bold";
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    border-color: #ff1054;
+  }
+  h2 {
+    font-family: "campton-bold";
+    font-size: 64px;
+    color: #ffffff;
+    gap: 10px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    margin: 0;
+  }
 
-    /* .container {
+  h3 {
+    font-family: "campton-light";
+    font-size: 35px;
+    color: #ffffff;
+    gap: 10px;
+    padding: 12px 0px 12px 0px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* .container {
       border: 2px;
       padding: 20px; 
       text-align: end;
@@ -52,7 +80,7 @@
       border-radius: 5px; 
     } */
 
-    /* .email{
+  /* .email{
     background-color: #FFFFFF;
     margin-top: 10px;
     width: 30%;
@@ -67,20 +95,51 @@
     cursor: pointer;
     } */
 
-    @media (max-width: 820px) {
-
-        .nyhedsbrev{
-            gap: 16px;
-            padding: 21px 13px 21px 13px;
-        }
-        h2{
-            font-size: 35px;
-        }
-
-        h3{
-            font-size: 20px;
-        }
+  @media (max-width: 820px) {
+    .nyhedsbrev {
+      gap: 16px;
+      padding: 21px 13px 21px 13px;
     }
+    h2 {
+      font-size: 35px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    .brev {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+    .email {
+      background-color: #dedede;
+      margin-top: 10px;
+      width: 40%;
+      font-family: "rubik-regular";
+      font-weight: lighter;
+      color: #00283b;
+      font-size: 20px;
+      padding: 10px 18px 10px 18px;
+      text-align: left;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    .knap1 {
+      padding: 10px 18px 10px 18px;
+      background-color: #ff1054;
+      margin-top: 10px;
+      width: 30%;
+      font-family: "campton-bold";
+      color: white;
+      font-size: 10px;
+      border-radius: 50px;
+      border: none;
+      border-color: #ff1054;
+    }
+  }
 </style>
-
-
