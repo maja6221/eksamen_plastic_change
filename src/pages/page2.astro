@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import DinStotteGorTil from "../components/Din_stotte_gor_til.astro";
 import RullendeBanner from "../components/Rullende_banner.astro";
 import Timeline from "../components/Timeline.astro";
+import Formular2 from "../components/Formular2.astro";
 ---
 
 <html lang="en">
@@ -19,6 +20,9 @@ import Timeline from "../components/Timeline.astro";
   <body>
     <Header />
     <Hero2 />
+    <div class="formular2">
+    <Formular2 />
+  </div>
     <DinStotteGorTil />
     <RullendeBanner />
     <Timeline />
@@ -38,5 +42,10 @@ import Timeline from "../components/Timeline.astro";
       #304ca8,
       #3740a4
     );
+  }
+
+  .formular2 {
+    display: flex;
+    justify-content: center;
   }
 </style>
