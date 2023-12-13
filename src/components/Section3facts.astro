@@ -14,17 +14,12 @@ import Flipcard6 from "./Flipcard6.astro";
 
 <div class="grid">
 
-    <Flipcard />
-
-    <Flipcard2 />
-
-    <Flipcard3 />
-
-    <Flipcard4 />
-
-    <Flipcard5 />
-
-    <Flipcard6 />
+    <div><Flipcard /></div>
+    <div> <Flipcard2 /></div>
+    <div><Flipcard3 /></div>
+    <div> <Flipcard4 /></div>
+    <div><Flipcard5 /></div>
+    <div> <Flipcard6 /></div>
 
 
 </div>
@@ -35,27 +30,37 @@ import Flipcard6 from "./Flipcard6.astro";
 
 <style>
 
+.grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        overflow: hidden;
+        
+        
+       
+        
+    }
 
-    @media (min-width: 400px) {
+
+    @media (max-width: 600px) {
 h2{
       font-size: 64px; 
 }
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 6fr; 
+
 }
 }
 
 
-@media (min-width: 600px) {
+@media (max-width: 1200px) {
 h2{
       font-size: 64px; 
 }
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr; 
+    grid-template-columns: 1fr;
 }
 }
   
@@ -78,14 +83,6 @@ h2{
     }
 
 
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        
-        
-       
-        
-    }
+ 
 
 </style>
