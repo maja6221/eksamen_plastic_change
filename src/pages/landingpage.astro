@@ -1,10 +1,14 @@
 ---
 import Header from "../components/Header.astro";
-import Hero2 from "../components/Hero2.astro";
-import Footer from "../components/Footer.astro";
-import DinStotteGorTil from "../components/Din_stotte_gor_til.astro";
+import Section1Hero from "../components/Section1_hero.astro";
+import Section2 from "../components/Section2.astro";
+import Section3facts from "../components/Section3facts.astro";
 import RullendeBanner from "../components/Rullende_banner.astro";
-import Timeline from "../components/Timeline.astro";
+import Section4 from "../components/Section4.astro";
+import Instagram from "../components/Instagram.astro";
+import Formular2 from "../components/Formular2.astro";
+import Nyhedsbrev from "../components/Nyhedsbrev.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -17,10 +21,14 @@ import Timeline from "../components/Timeline.astro";
   </head>
   <body>
     <Header />
-    <Hero2 />
-    <DinStotteGorTil />
+    <Section1Hero />
+    <Section2 />
+    <Section3facts />
+    <Section4 />
     <RullendeBanner />
-    <Timeline />
+    <Instagram />
+    <Formular2 />
+    <Nyhedsbrev />
     <Footer />
   </body>
 </html>
@@ -28,7 +36,6 @@ import Timeline from "../components/Timeline.astro";
 <style>
   body {
     margin: 0;
-
     /* Jeg ved ikke om det er den rigtige gradient jeg har sat ind- i forhold til farverne */
     background-image: linear-gradient(
       #1c77e0,
