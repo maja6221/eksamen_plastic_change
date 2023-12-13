@@ -14,17 +14,6 @@ import Footer from "../components/Footer.astro";
   <body>
     <Header />
     <h1>Tak for dit bidrag!</h1>
-    <!-- <div class="lottie_heart">
-        <dotlottie-player
-        src="https://lottie.host/ad6d387c-b927-42c1-b284-f0b6becf41ef/tmKmUR5GKE.json"
-        background="transparent"
-        speed="1"
-        style="width: 300px; height: 300px;"
-        position:relative;
-        loop
-        autoplay></dotlottie-player>
-    </div> -->
-
     <div class="lottie_heart">
       <dotlottie-player src="https://lottie.host/c4a5464c-8be8-4ffb-abef-5a249f90508f/arBwTi2g1F.json" 
       background="transparent" 
@@ -33,7 +22,8 @@ import Footer from "../components/Footer.astro";
       loop autoplay></dotlottie-player>
     </div>
 
-    <h4>Din støtte gør en afgørende forskel for vores fælles mål om at skabe en mere bæredygtig og plastikfri fremtid</h4>
+    <h4>Din støtte gør en afgørende forskel for vores fælles mål om at skabe en mere bæredygtig og plastikfri fremtid.</h4>
+
     <Footer />
   </body>
 </html>
@@ -65,13 +55,14 @@ import Footer from "../components/Footer.astro";
     font-family: "campton-bold";
     color: #FFFFFF;
     gap: 10px;
-    padding: 28px 10px 28px 10px;
+    padding: 10px 10px 10px 10px;
     margin-left: 25%;
     margin-right: 25%;
   }
 
   .lottie_heart{
     padding-left: 39%;
+    width: 250px;
   }
 
   @media (max-width: 820px) {
@@ -81,6 +72,8 @@ import Footer from "../components/Footer.astro";
 
     h4{
         font-size: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .lottie_heart{
