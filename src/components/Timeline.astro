@@ -1,5 +1,5 @@
 ---
-
+import Nyhedsbrev from "./Nyhedsbrev.astro";
 ---
 
 <!-- <h3>4 ting som du kan gøre</h3>
@@ -32,16 +32,16 @@
   <div class="container left">
     <div class="content">
       <div class="intro_billede">
+        <h2>1. Brug af genanvendelige produkter</h2>
         <img class="flaskerimg" src="/public/images/flasker.webp" alt="" />
       </div>
-      <h2>1.Brug af genanvendelige produkter</h2>
     </div>
   </div>
 
   <div class="container right">
     <div class="content">
-      <img class="stot" src="/public/images/organisation.png" alt="" />
       <h2>2. Støtte organisationer</h2>
+      <img class="stot" src="/public/images/organisation.png" alt="" />
     </div>
   </div>
 </div>
@@ -50,7 +50,7 @@
   <div class="container left">
     <div class="content">
       <h2>3. Deltag i aktivisme</h2>
-      <img src="/public/images/aktivisme.png" alt="" />
+      <img class="aktivisme" src="/public/images/aktivisme.png" alt="" />
     </div>
   </div>
 </div>
@@ -66,18 +66,24 @@
     </div>
   </div>
 </div>
+<Nyhedsbrev />
 
 <style>
   * {
     box-sizing: border-box;
   }
 
-  .flaskerimg {
+  .flaskerimg,
+  .stot,
+  .aktivisme {
     width: 100%;
+    justify-items: center;
   }
 
   h2 {
     color: #56d8bc;
+    font-size: 30px;
+    padding: 2%;
   }
 
   h3 {
