@@ -42,7 +42,7 @@
 
   <div class="container right">
     <div class="content">
-      <img src="/public/images/organisation.png" alt="" />
+      <img class="stot" src="/public/images/organisation.png" alt="" />
       <h2>2. Støtte organisationer</h2>
     </div>
   </div>
@@ -76,6 +76,10 @@
 
   .flaskerimg {
     width: 100%;
+  }
+
+  h2 {
+    color: #56d8bc;
   }
 
   h3 {
@@ -153,9 +157,9 @@
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid white;
+    border: medium solid rgba(0, 0, 0, 0.26);
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.29);
   }
 
   /* Add arrows to the right container (pointing left) */
@@ -167,9 +171,9 @@
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid white;
+    border: medium solid rgb(0, 0, 0);
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent rgb(0, 0, 0) transparent transparent;
   }
 
   /* Fix the circle for containers on the right side */
@@ -179,8 +183,8 @@
 
   /* The actual content */
   .content {
-    padding: 20px 30px;
-    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.29);
     position: relative;
     border-radius: 6px;
   }
