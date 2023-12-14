@@ -12,6 +12,7 @@ import Flipcard6 from "./Flipcard6.astro";
     <h2>6 facts omkring plastik</h2>
 </div>
 
+<div id="flex">
 <div id="grid">
 
     <div><Flipcard /></div>
@@ -21,6 +22,7 @@ import Flipcard6 from "./Flipcard6.astro";
     <div><Flipcard5 /></div>
     <div> <Flipcard6 /></div>
 
+</div>
 </div>
 
 </section>
@@ -65,32 +67,25 @@ import Flipcard6 from "./Flipcard6.astro";
         
     }
 
+    #flex {
+        display: flex;
+        justify-content: center;
+    }
 
 
 
-    @media (max-width: 430px) {
+
+
+    @media (max-width: 500px) {
 h2{
       font-size: 64px; 
 }
 #grid {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
 
 }
-}
 
-
-    @media (max-width: 600px) {
-h2{
-      font-size: 64px; 
-}
-#grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-
-}
 }
 
 
@@ -111,7 +106,7 @@ h2{
 
 
 
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
 h2{
       font-size: 64px; 
 }
