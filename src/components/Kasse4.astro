@@ -1,6 +1,6 @@
 <div class="kasse4">
   <div class="space">
-    <h4>4. Global spredning:</h4>
+    <h3>4. Global spredning:</h3>
     <p>
       Det er også et globalt problem. Plastikfragmenter og mikroplastik kan
       spredes over store afstande igennem luft og havstrømme. Det kan dermed
@@ -26,9 +26,9 @@
     padding-right: 30px;
   }
 
-  h4 {
+  h3 {
     font-family: "campton-bold";
-    font-size: 30px;
+    font-size: 35px;
     color: #56d8bc;
     margin: 0;
   }
@@ -41,9 +41,15 @@
     padding-top: 10px;
   }
 
+  @media (max-width: 1024px) {
+    .kasse4{
+      left: 16%;
+    }
+
+  }
   @media (max-width: 820px) {
     h4 {
-      font-size: 20px;
+      font-size: 30px;
     }
 
     p {
@@ -53,9 +59,9 @@
       display: grid;
       grid-template-columns: 1fr;
       position: relative;
-      left: 0px;
-      width: 50%;
-      margin-left: 4%;
+      width: 62%;
+      left: 5%;
+      padding: 20px 50px 20px 50px;
     }
   }
 </style>

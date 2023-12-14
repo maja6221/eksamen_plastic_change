@@ -1,6 +1,6 @@
 <div class="kasse3">
   <div>
-    <h4>3. Økonomiske problemer:</h4>
+    <h3>3. Økonomiske problemer:</h3>
     <p>
       Plastikforurening har økonomiske konsekvenser, fordi det kan være med til
       at påvirke turisme og fiskeri negativt. Oprydning af plastikaffald og
@@ -20,9 +20,9 @@
     left: -40px;
   }
 
-  h4 {
+  h3 {
     font-family: "campton-bold";
-    font-size: 30px;
+    font-size: 35px;
     color: #56d8bc;
     margin: 0;
   }
@@ -35,9 +35,17 @@
     padding-top: 10px;
   }
 
+  @media (max-width: 1024px) {
+    .kasse3{
+      left: 16%;
+      width: 34rem;
+
+    }
+  }
+
   @media (max-width: 820px) {
-    h4 {
-      font-size: 20px;
+    h3 {
+      font-size: 30px;
     }
 
     p {
@@ -47,9 +55,11 @@
       display: grid;
       grid-template-columns: 1fr;
       position: relative;
-      width: 50%;
-      margin-left: 4%;
+      width: 62%;
+      left: 5%;
+      padding: 20px 50px 20px 50px;
   }
+}
 </style>
 
 <script>

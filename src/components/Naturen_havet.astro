@@ -1,6 +1,6 @@
 <div class="kasse1">
   <div>
-    <h4>Beskytte naturen og havet mod plastikforurening:</h4>
+    <h3>Beskytte naturen og havet mod plastikforurening:</h3>
     <p>Hvert år ender mindst 15 millioner tons plastik i havet.</p>
 
     <p>
@@ -28,11 +28,12 @@
     border-radius: 0px 20px 20px 0px;
     padding: 50px 20px 10px 20px;
     background-color: rgba(0, 0, 0, 0.28);
+    margin-bottom: 75px;
   }
 
-  h4 {
+  h3 {
     font-family: "campton-bold";
-    font-size: 30px;
+    font-size: 35px;
     color: #56d8bc;
     margin: 10px;
     padding-left: 20px;
@@ -51,9 +52,16 @@
     justify-self: center;
   }
 
+  @media (max-width: 1024px) {
+    .kasse1{
+      padding-left: 10%;
+    }
+  }
+
+
   @media (max-width: 820px) {
-    h4 {
-      font-size: 20px;
+    h3 {
+      font-size: 30px;
     }
 
     p {
@@ -63,7 +71,8 @@
       display: grid;
       grid-template-columns: 1fr;
       position: relative;
-      width: 50%;
+      width: 80%;
+      left: 5%;
     }
   }
 </style>

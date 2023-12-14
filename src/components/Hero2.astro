@@ -1,10 +1,22 @@
+---
+import Header from "./Header.astro";
+---
+
 <div class="hero2">
+  <Header />
   <h1>Hvad kan du gøre?</h1>
 </div>
 
 <style>
+  .hero1 {
+    background-image: url(./images/plastic2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    margin: 0;
+  }
   .hero2 {
-    background-image: url(./images/plastik_skrald.jpg);
+    background-image: url(./images/plastik_skrald.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -21,17 +33,21 @@
     left: 12%;
   }
 
-  @media (max-width: 820px) {
-    h1 {
-      font-size: 40px;
-      left: 4%;
-    }
-  }
-
   @media (max-width: 1024px) {
     h1 {
       font-size: 100px;
       left: 6%;
+    }
+  }
+  @media (max-width: 820px) {
+    h1 {
+      font-size: 40px;
+      left: 4%;
+      top: 40%;
+    }
+
+    .hero2 {
+      height: 70vh;
     }
   }
 </style>

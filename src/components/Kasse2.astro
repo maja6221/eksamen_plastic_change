@@ -1,6 +1,6 @@
 <div class="kasse2">
   <div class="space">
-    <h4>2. Skader på dyrelivet:</h4>
+    <h3>2. Skader på dyrelivet:</h3>
     <p>
       Dyr lider under plastikforurening. Dyr på både land og i vand kan indtage
       plastikaffald. Dette kan føre til alvorlige sundhedsmæssige problmer,
@@ -25,9 +25,9 @@
     padding-right: 30px;
   }
 
-  h4 {
+  h3 {
     font-family: "campton-bold";
-    font-size: 30px;
+    font-size: 35px;
     color: #56d8bc;
     margin: 0;
   }
@@ -40,9 +40,15 @@
     padding-top: 10px;
   }
 
+  @media (max-width: 1024px) {
+    .kasse2{
+      left: 16%;
+    }
+  }
+
   @media (max-width: 820px) {
-    h4 {
-      font-size: 20px;
+    h3 {
+      font-size: 30px;
     }
 
     p {
@@ -52,9 +58,9 @@
       display: grid;
       grid-template-columns: 1fr;
       position: relative;
-      left: 0px;
-      width: 50%;
-      margin-left: 4%;
+      width: 62%;
+      left: 5%;
+      padding: 20px 50px 20px 50px;
     }
   }
 </style>
