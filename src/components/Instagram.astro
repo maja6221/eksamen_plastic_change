@@ -209,11 +209,23 @@
     color: #ff1054;
   }
 
+  @media (max-width: 1024px) {
+    .grid_instagram{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-left: 8%;
+    }
+
+    .button-link{
+      width: 15%;
+    }
+  }
+
   @media (max-width: 820px) {
     .grid_instagram {
       display: grid;
       grid-template-columns: 1fr;
-      padding: 0px 0px 0px 60px;
+      padding-left: 20px;
       gap: 10px;
     }
 
@@ -228,18 +240,6 @@
 
     .button-link {
       width: 30%;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    .grid_instagram{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-left: 8%;
-    }
-
-    .button-link{
-      width: 15%;
     }
   }
 
