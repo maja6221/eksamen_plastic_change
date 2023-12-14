@@ -30,7 +30,7 @@
     </div>
 
      <input class="andet_beløb" type="text" placeholder="Andet beløb">
-      <input class="knap1" type="submit" value="Støt nu">
+      <input id="knap1" type="submit" value="Støt nu">
  </form>
 
 <style>
@@ -49,7 +49,7 @@
     cursor: pointer;
   }
 
-  .knap1{
+  #knap1{
     padding: 10px 18px 10px 18px;
     background-color: #FF1054;
     margin-top: 10px;
@@ -58,12 +58,12 @@
     color: white;
     font-size: 20px;
     border-radius: 50px;
-    border: none;
     border-color: #FF1054;
+    border-style: solid;
    
   }
 
-  .knap1:hover {
+  #knap1:hover {
     background-color: white;
     border-color: #FF1054;
     color: #FF1054;
@@ -99,6 +99,7 @@
       width: 65%;
       height: 82%;
       margin-top: 35px;
+      padding-bottom: 20px;
     }
 
     #form-container img {
@@ -141,6 +142,8 @@
       border: solid black;
       accent-color: #FF1054;
     }
+
+
     label{
       font-family: "campton";
       font-size: 20px;
