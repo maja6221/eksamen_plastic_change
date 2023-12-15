@@ -16,8 +16,12 @@ import Burgermenu from "../components/Burgermenu.astro";
   <body>
     <Burgermenu />
     <h2>Støt os imod plastik forurening</h2>
+    <div class="tekst">
     <h4>Alle beløb, små som store, kan gøre en stor forskel!</h4>
+    </div>
+    <div class="center">
     <StoetFormular2 />
+  </div>
     <Footer />
   </body>
 </html>
@@ -32,6 +36,12 @@ import Burgermenu from "../components/Burgermenu.astro";
       #304ca8,
       #3740a4
     );
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   h2{
@@ -50,8 +60,14 @@ import Burgermenu from "../components/Burgermenu.astro";
     color: #FFFFFF;
     padding: 10px 10px 10px 10px;
     margin: 0;
-    margin-left: 22%;
-    margin-right: 25%;
+    text-align: center;
+   
+  }
+
+  .tekst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @media (max-width: 1024px) {
@@ -62,7 +78,13 @@ import Burgermenu from "../components/Burgermenu.astro";
     
     h4{
       padding-bottom: 22px;
+      text-align: center;
     }
+    .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   }
 
@@ -74,10 +96,21 @@ import Burgermenu from "../components/Burgermenu.astro";
 
     h4{
         font-size: 20px;
-        margin-left: 10%;
-        margin-right: 0%;
+       text-align: center;
         padding-bottom: 30px;
     }
+
+    .tekst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  }
+
 
 </style>

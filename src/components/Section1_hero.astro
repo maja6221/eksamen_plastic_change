@@ -7,28 +7,45 @@ import Burgermenu from "./Burgermenu.astro";
 <div class="hero1">
   <Burgermenu />
   <div class="tekst">
-    <div class="talebobbel">
-    <Talebobbel />
-  </div>
-  <div class="formular">
-    <StotFormular />
-  </div>
+
+   
+
+      <div class="talebobbel">
+     <Talebobbel />
+     </div>
+
+     <div class="formular">
+     <StotFormular />
+     </div>
+
+  
   </div>
 </div>
 
 <style>
   .tekst {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   padding-inline: 80px;
+  margin-left: 6%;
    
-    
   }
 
-  .talebobbel {
+
+
+  /* .talebobbel {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  .formular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
 
   .hero1 {
     background-image: url(/assets/images/plastic2.webp);
@@ -40,8 +57,13 @@ import Burgermenu from "./Burgermenu.astro";
 
   @media (max-width: 820px) {
     .tekst {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  
+    
+  }
   }
 </style>

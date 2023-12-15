@@ -1,11 +1,4 @@
 <div class="kasse4">
-  <dotlottie-player
-    src="https://lottie.host/d8fd80c1-4757-4e95-97bc-13f4f6258205/erDIPmpeLp.json"
-    background="transparent"
-    speed="1"
-    style="width: 300px; height: 300px;"
-    loop
-    autoplay></dotlottie-player>
   <div>
     <h3>Beskytte folkesundheden mod skadelig kemi</h3>
     <p>
@@ -14,10 +7,18 @@
     </p>
 
     <p>
-      Flere af disse kemikalier er farlige for menneskers helbred, og kan føre til blandet andet
-      kræft, hjertesygdom, kronisk inflammatorisk ledsygdom m.m.
+      Flere af disse kemikalier er farlige for menneskers helbred, og kan føre
+      til blandet andet kræft, hjertesygdom, kronisk inflammatorisk ledsygdom
+      m.m.
     </p>
   </div>
+  <dotlottie-player
+    src="https://lottie.host/d8fd80c1-4757-4e95-97bc-13f4f6258205/erDIPmpeLp.json"
+    background="transparent"
+    speed="1"
+    style="width: 300px; height: 300px;"
+    loop
+    autoplay></dotlottie-player>
 </div>
 
 <style>
@@ -25,7 +26,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
-    width: 50em;
+    width: 53em;
     border: 0.5px;
     border-radius: 20px 0px 0px 20px;
     padding: 50px 20px 10px 20px;
@@ -53,9 +54,8 @@
     width: 85%;
   }
 
-
   @media (max-width: 1024px) {
-    .kasse4{
+    .kasse4 {
       left: 10%;
       width: 58rem;
     }
@@ -78,7 +78,18 @@
     }
   }
 
-
+  @media (max-width: 1950px) {
+    .kasse4 {
+      /* width: 34em;
+      border: 0.5px;
+      border-radius: 20px;
+      padding: 70px; */
+      background-color: #00000069;
+      position: relative;
+      left: 1100px;
+      top: 2px;
+    }
+  }
 </style>
 
 <script
