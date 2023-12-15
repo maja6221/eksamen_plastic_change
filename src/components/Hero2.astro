@@ -5,7 +5,9 @@ import Burgermenu from "./Burgermenu.astro";
 
 <div class="hero2">
   <Burgermenu />
+  <div class="center">
   <h1>Hvad kan du gøre?</h1>
+</div>
 </div>
 
 <style>
@@ -31,8 +33,14 @@ import Burgermenu from "./Burgermenu.astro";
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 12%;
-    text-align: center;
+    
+   
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @media (max-width: 1024px) {
