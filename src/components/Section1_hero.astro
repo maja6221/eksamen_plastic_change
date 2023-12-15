@@ -7,8 +7,12 @@ import Burgermenu from "./Burgermenu.astro";
 <div class="hero1">
   <Burgermenu />
   <div class="tekst">
+    <div class="talebobbel">
     <Talebobbel />
+  </div>
+  <div class="formular">
     <StotFormular />
+  </div>
   </div>
 </div>
 
@@ -16,6 +20,14 @@ import Burgermenu from "./Burgermenu.astro";
   .tekst {
     display: grid;
     grid-template-columns: 1fr 1fr;
+   
+    
+  }
+
+  .talebobbel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .hero1 {
