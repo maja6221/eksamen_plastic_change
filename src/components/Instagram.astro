@@ -3,6 +3,7 @@
 </div>
 
 <div class="grid_instagram">
+  <div class="flex">
   <div class="instagram-post">
     <div class="post-header">
       <img
@@ -21,7 +22,9 @@
       <p class="dato">11. September</p>
     </div>
   </div>
+  </div>
 
+  <div class="flex">
   <div class="instagram-post">
     <div class="post-header">
       <img
@@ -40,7 +43,9 @@
       <p class="dato">1. Oktober</p>
     </div>
   </div>
+</div>
 
+<div class="flex">
   <div class="instagram-post">
     <div class="post-header">
       <img
@@ -59,7 +64,9 @@
       <p class="dato">24. Oktober</p>
     </div>
   </div>
+</div>
 
+  <div class="flex">
   <div class="instagram-post">
     <div class="post-header">
       <img
@@ -78,6 +85,7 @@
       <p class="dato">20. November</p>
     </div>
   </div>
+</div>
 </div>
 
 <div class="klik_instagram">
@@ -103,6 +111,10 @@
     gap: 5px;
   }
 
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
   .icon1 {
     width: 20px;
   }
@@ -139,6 +151,7 @@
     border: 1px solid #ccc;
     background-color: #fff;
     margin-bottom: 5rem;
+    
   }
 
   .post-header {
@@ -216,6 +229,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin-left: 8%;
+
     }
 
     .button-link {
@@ -229,6 +243,8 @@
       grid-template-columns: 1fr;
       padding-left: 20px;
       gap: 10px;
+      
+      
     }
 
     h2 {
