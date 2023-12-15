@@ -1,5 +1,4 @@
 ---
-import Header from "../components/Header.astro";
 import Section1Hero from "../components/Section1_hero.astro";
 import Section2 from "../components/Section2.astro";
 import Section3facts from "../components/Section3facts.astro";
@@ -9,7 +8,7 @@ import Instagram from "../components/Instagram.astro";
 import Formular2 from "../components/Formular2.astro";
 import Nyhedsbrev from "../components/Nyhedsbrev.astro";
 import Footer from "../components/Footer.astro";
-import Burgermenu from "../components/Burgermenu.astro";
+
 ---
 
 <html lang="en">
@@ -21,26 +20,29 @@ import Burgermenu from "../components/Burgermenu.astro";
     <title>Astro</title>
   </head>
   <body>
-    <Burgermenu />
-    <Header />
-    <Section1Hero />
-    <Section2 />
-    <Section3facts />
-    <Section4 />
-    <RullendeBanner />
-    <Instagram />
-    <div class="formular2">
-    <Formular2 />
-  </div>
-    <Nyhedsbrev />
-    <Footer />
+    <div class="overflow">
+    
+      <Section1Hero />
+      <Section2 />
+      <Section3facts />
+      <Section4 />
+      <RullendeBanner />
+      <Instagram />
+      <div class="formular2">
+        <Formular2 />
+      </div>
+      <Nyhedsbrev />
+      <Footer />
+    </div>
   </body>
 </html>
 
 <style>
+  .overflow {
+    overflow: hidden;
+  }
   body {
     margin: 0;
-    /* Jeg ved ikke om det er den rigtige gradient jeg har sat ind- i forhold til farverne */
     background-image: linear-gradient(
       #1c77e0,
       #5b68d8,
