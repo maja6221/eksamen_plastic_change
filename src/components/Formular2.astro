@@ -6,13 +6,13 @@
   
       <div class="bidrag">
         <div class="flex">
-         <input type="radio" class="knap0" name="enGang" required>
+         <input type="radio" id="knap0" name="enGang" required>
          <label for="knap0">Månedligt</label>
         </div>
       
         <div class="flex">
-          <input type="radio" class="knap0" name="enGang" required>
-          <label for="knap0">Én gang</label>
+          <input type="radio" id="knap1" name="enGang" required>
+          <label for="knap1">Én gang</label>
         </div>
       </div>
       
@@ -20,15 +20,15 @@
       <div class="beløb">
         <div>
           <label class="beløb" for="knap01">50 kr</label>
-        <input type="radio" class="knap01" name="beløb" value="50">
+        <input type="radio" id="knap01" name="beløb" value="50">
       </div>
       <div>
-        <label class="beløb"  for="knap01">75 kr</label>
-        <input type="radio" class="knap01" name="beløb" >     
+        <label class="beløb"  for="knap02">75 kr</label>
+        <input type="radio" id="knap02" name="beløb" >     
       </div>
       <div>
-        <label class="beløb" for="knap01">125 kr</label>
-        <input type="radio" class="knap01" name="beløb" >
+        <label class="beløb" for="knap03">125 kr</label>
+        <input type="radio" id="knap03" name="beløb" >
       </div>
       </div>
   
@@ -38,7 +38,7 @@
     </div>
     <div>
       <form>
-        <input class="knap1" type="submit" formaction="/page4" value="Støt nu">
+        <input id="knap6" type="submit" formaction="/page4" value="Støt nu">
       </form>
     </div>
     </div>
@@ -71,7 +71,7 @@
 
     }
   
-    .knap1{
+    #knap6{
       padding: 10px 18px 10px 18px;
       background-color: #FF1054;
       margin-top: 10px;
@@ -86,7 +86,7 @@
  
     }
   
-    .knap1:hover {
+    #knap6:hover {
       background-color: white;
       border-color: #FF1054;
       color: #FF1054;
@@ -168,7 +168,16 @@
         box-sizing: border-box;
       }
   
-      .knap0{
+      #knap0{
+        border-radius: 50%;
+        width: 47px;
+        height: 47px;
+        background-color: #fff;
+        border: solid black;
+        accent-color: #FF1054;
+        
+      }
+      #knap1{
         border-radius: 50%;
         width: 47px;
         height: 47px;
@@ -189,7 +198,23 @@
         gap: 10px;
       }
   
-      .knap01{
+      #knap01{
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        background-color: #fff;
+        border: solid black;
+        accent-color: #FF1054;
+      }
+      #knap02{
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        background-color: #fff;
+        border: solid black;
+        accent-color: #FF1054;
+      }
+      #knap03{
         border-radius: 50%;
         width: 70px;
         height: 70px;
@@ -222,7 +247,7 @@
       cursor: pointer;
     }
   
-    .knap1{
+    #knap6{
         display: flex;
         
         align-items: center;
@@ -287,7 +312,15 @@
         margin: 0;
       }
   
-      .knap0{
+      #knap0{
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        background-color: #fff;
+        border: solid black;
+        accent-color: #FF1054;
+      }
+      #knap1{
         border-radius: 50%;
         width: 24px;
         height: 24px;
@@ -307,7 +340,24 @@
         gap: 10px;
       }
   
-      .knap01{
+      #knap01{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border: solid black;
+        accent-color: #FF1054;
+      }
+      #knap02{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border: solid black;
+        accent-color: #FF1054;
+      }
+  
+      #knap03{
         border-radius: 50%;
         width: 30px;
         height: 30px;
@@ -342,7 +392,7 @@
       cursor: pointer;
     }
   
-    .knap1{
+    #knap6{
         display: flex;
         
         align-items: center;
@@ -422,6 +472,14 @@
         border: solid black;
         accent-color: #FF1054;
       }
+      #knap1{
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        background-color: #fff;
+        border: solid black;
+        accent-color: #FF1054;
+      }
       label{
         font-family: "campton";
         font-size: 9px;
@@ -435,6 +493,23 @@
       }
   
       #knap01{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border: solid black;
+        accent-color: #FF1054;
+      }
+
+      #knap02{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border: solid black;
+        accent-color: #FF1054;
+      }
+      #knap03{
         border-radius: 50%;
         width: 30px;
         height: 30px;
